@@ -1,18 +1,23 @@
 #!/usr/local/bin/python3.11
-import sys, os, argparse, datetime, logging, yaml, uuid
+import sys, os, argparse, datetime, logging, yaml, random
 from datetime import datetime as dt
 
 OUTPUT_FILE_NAME = "checklist.html"
 logging.basicConfig(format="%(asctime)s [%(levelname)s]: %(message)s")
 logger = logging.getLogger("main")
+environment = None
 
 def create_link(link):
+  if environment in { "beta", "testing" }:
+    link = link.replace("webapp", environment)
+  elif environment == "localhost":
+    link = link.replace("https://webapp.brightmetrics.com/", "http://localhost:8080/")
   bust = "?" if "?" not in link else "&"
-  bust += "_qa=" + timestamp()
+  bust += "_qa=" + timestamp() + str(random.randint(0,999_999))
   splice = link.rindex("#") if "#" in link else len(link)
   return link[:splice] + bust + link[splice:]
 
-def load_yaml():
+def load_yaml(args):
   groups = []
 
   with open("tests.yaml", "r", encoding="utf8") as stream:
@@ -30,7 +35,7 @@ class TestGroup:
 
 class Test:
   def __init__(self, **kwargs):
-    self.id = uuid.uuid4()
+    self.id = random.randint(0,999_999)
     self.link = create_link(kwargs["link"])
     self.desc = kwargs["desc"]
     self.traits = kwargs["traits"]
@@ -42,7 +47,7 @@ test_row_template = r"""
     <a href="{link}"
        target="_blank"
        onclick="x=document.getElementById('{id}');x.checked=true;x.disabled=false">
-       report
+       link
     </a>
   </td>
   <td class="fixed">
@@ -70,11 +75,11 @@ checklist_template = r"""
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Reporting Checklist</title>
+    <title>QA Checklist</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Reporting QA Checklist</h1>
+    <h1>QA Checklist</h1>
     {tests}
   </body>
 </html>
@@ -83,7 +88,7 @@ checklist_template = r"""
 def timestamp():
   return dt.strftime(dt.now(), "%Y%m%d%H%M%S")
 
-def render():
+def render(args):
   def render_rows(tests):
     rendered = []
     for t in tests:
@@ -106,12 +111,13 @@ def render():
       rendered.append(render_table(tg))
     return checklist_template.format(tests="".join(rendered))
 
-  return render_tables(load_yaml())
+  return render_tables(load_yaml(args))
 
 def get_args():
   args = argparse.ArgumentParser()
   args.add_argument("-k", "--keep", action="store_true")
   args.add_argument("-v", "--verbose", action="store_true")
+  args.add_argument("-e", "--environment")
   return args.parse_args()
 
 def archive_existing_checklist():
@@ -126,19 +132,21 @@ def archive_existing_checklist():
     with open(f"archives/n{timestamp()}_{OUTPUT_FILE_NAME}", "w", encoding="utf8") as archived_file:
       archived_file.write(contents)
 
-def create_checklist_file(keep):
-  if keep:
+def create_checklist_file(args):
+  if args.keep:
     archive_existing_checklist()
 
   with open(OUTPUT_FILE_NAME, "w", encoding="utf8") as file:
-    file.write(render())
+    file.write(render(args))
     logger.debug("DONE")
 
 def main(args):
   if args.verbose:
     logger.setLevel(logging.DEBUG)
 
-  create_checklist_file(args.keep)
+  create_checklist_file(args)
 
 if __name__ == "__main__":
-  main(get_args())
+  args = get_args()
+  environment = args.environment
+  main(args)
