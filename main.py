@@ -13,32 +13,27 @@ def create_link(link):
   return link[:splice] + bust + link[splice:]
 
 def load_yaml():
-  tests = []
+  groups = []
 
   with open("tests.yaml", "r", encoding="utf8") as stream:
     try:
-      tests = yaml.safe_load(stream)
+      groups = yaml.safe_load(stream)
     except yaml.YAMLError as ex:
       logger.error("%s", ex)
 
-  return [Test(**t) for t in tests]
+  return [TestGroup(group["category"], group["tests"]) for group in groups]
+
+class TestGroup:
+  def __init__(self, name, tests):
+    self.name = name
+    self.tests = [Test(**t) for t in tests]
 
 class Test:
   def __init__(self, **kwargs):
     self.id = uuid.uuid4()
     self.link = create_link(kwargs["link"])
     self.desc = kwargs["desc"]
-    self.criteria = kwargs["criteria"]
-    self.suite = kwargs["suite"]
-
-  def __repr__(self):
-    return f"""
-id: {self.id}
-link: {self.link}
-desc: {self.desc}
-criteria: {self.criteria}
-suite: {self.suite}
-    """
+    self.traits = kwargs["traits"]
 
 test_row_template = r"""
 <tr>
@@ -48,10 +43,10 @@ test_row_template = r"""
        target="_blank"
        onclick="x=document.getElementById('{id}');x.checked=true;x.disabled=false">
        report
-     </a>
+    </a>
   </td>
   <td class="fixed">
-    {criteria}
+    {traits}
   </td>
   <td>
     <pre>{desc}</pre>
@@ -89,19 +84,29 @@ def timestamp():
   return dt.strftime(dt.now(), "%Y%m%d%H%M%S")
 
 def render():
-  return checklist_template.format(
-      tests="".join([
-        test_table_template.format(
-          title="Report Field Editor Tests",
-          rows="".join([
-            test_row_template.format(
-              id=t.id,
-              link=t.link,
-              desc=t.desc,
-              criteria=t.criteria,
-              suite=t.suite) for t in load_yaml()
-            ]))
-          ]))
+  def render_rows(tests):
+    rendered = []
+    for t in tests:
+      rendered.append(
+        test_row_template.format(
+          id=t.id,
+          link=t.link,
+          desc=t.desc,
+          traits=t.traits))
+    return "".join(rendered)
+
+  def render_table(test_group):
+    return test_table_template.format(
+      title=test_group.name,
+      rows=render_rows(test_group.tests))
+
+  def render_tables(test_groups):
+    rendered = []
+    for tg in test_groups:
+      rendered.append(render_table(tg))
+    return checklist_template.format(tests="".join(rendered))
+
+  return render_tables(load_yaml())
 
 def get_args():
   args = argparse.ArgumentParser()

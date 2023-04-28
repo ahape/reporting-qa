@@ -26,6 +26,6 @@ td:first-child { /* checkbox */
 }
 
 td.fixed {
-  width: 100px;
+  width: 150px;
   text-align: center;
 }
