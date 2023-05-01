@@ -147,17 +147,147 @@
         - dashboard
         - mivc
 
+- category: Exporting Report Table Tests
+  tests:
+
+    - link: https://webapp.brightmetrics.com/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4
+      desc: |
+        1. Load the dashboard detail
+        2. Click "Save as Report"
+        3. Expected -> report table to look the same on both the Dashboard
+            Detail and Reports page
+      traits:
+        - dashboard
+        - mivc
+
+    - link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e
+      desc: |
+        1. Load the report
+        2. Click on the cell that says "Jim Lewis"
+        3. Load the detail report
+        4. Expected -> there should be a filter for "Jim Lewis", and when
+            hovering over it, it should say "This was added from drilling into a
+            summary report cell"
+        5. Expected -> detail should show as many records as were represented
+            by the summary report aggregation
+      traits:
+        - summary
+        - detail
+        - mivc
+
+    - link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e
+      desc: |
+        1. Load the report
+        2. Click print preview
+        3. Click on the cell that says "Jim Lewis"
+        4. Load the detail report
+        5. Expected -> detail report looks normal
+      traits:
+        - summary
+        - detail
+        - mivc
+
+    - link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823
+      desc: |
+        1. Load the report
+        2. Click export
+        3. Select PDF
+        4. Select Portrait
+        5. Change the title of the export to "TEST"
+        6. Click EXPORT
+        7. Once the export finishes, open the file (don't close the Export
+            browser tab)
+        8. Expected -> filename should be titled "TEST.pdf"
+        9. Expected -> file should look the same as the report, and be rendered
+            as a PDF in portrait orientation
+        10. In the Export browser tab, click the link that says "click here to
+            download manually"
+        11. Expected -> Another file should download
+      traits:
+        - summary
+        - mivc
+
+    - link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823
+      desc: |
+        1. Load the report
+        2. Click export
+        3. Expected -> the selections should be saved from last time (PDF /
+            Portrait)
+        4. Select PDF, then select Landscape, then click EXPORT
+        5. Once the export finishes, open the file
+        6. Expected -> file should look the same as the report, and be rendered
+            as a PDF in landscape orientation
+      traits:
+        - summary
+        - mivc
+
+    - link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823
+      desc: |
+        1. Load the report
+        2. Click export, then select CSV, then select Formatted, then click EXPORT
+        3. Once the export finishes, open the file
+        4. Expected -> file should look the same as the report, and be rendered
+            as CSV, with times formatted XX:XX:XX and percentages rendered with the
+            percent sign (%)
+      traits:
+        - summary
+        - mivc
+
+    - link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823
+      desc: |
+        1. Load the report
+        2. Click export, then select CSV, then select Unformatted, then click EXPORT
+        3. Once the export finishes, open the file
+        4. Expected -> file should look the same as the report, and be rendered
+            as CSV, with all values rendered as decimals
+      traits:
+        - summary
+        - mivc
+
+    - link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823
+      desc: |
+        1. Load the report
+        2. Click export, then select Excel, then click EXPORT
+        3. Once the export finishes, open the file
+        4. Expected -> file should look the same as the report, and be rendered
+            as XLSX
+      traits:
+        - summary
+        - mivc
+
+    - link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823
+      desc: |
+        1. Load the report
+        2. Click print preview
+        3. Once the report loads, click "Export to: Excel"
+        4. Expected -> export dialog should appear with "Excel" auto-selected. Now close that dialog
+        6. Click "Export to: CSV"
+        7. Expected -> export dialog should appear with "CSV" auto-selected. Now close that dialog
+        8. Click "Export to: PDF"
+        9. Expected -> export dialog should appear with "PDF" auto-selected
+        10. Click EXPORT
+        11. Once the export finishes, open the file
+        12. Expected -> file should look the same as the report, and be rendered
+            as PDF
+      traits:
+        - summary
+        - mivc
+
+    - link: https://webapp.brightmetrics.com/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4
+      desc: |
+        1. Load the dashboard detail page
+        2. Once the page loads, click the "Export" button
+        3. Once the dialog opens, select "Export Report" (it should be the
+            default selection), then select CSV as the format, then select
+            Unformatted as the format style
+        4. Click EXPORT
+        5. Once the export finishes, open the file
+        6. Expected -> file should look the same as the report, and be rendered
+            as XLSX
+      traits:
+        - dashboard
+        - mivc
+
 # TODO
 # - Add genesys reports to Print Preview Tests
-#
-# category: Exporting Report Table Tests
-# - dashboard detail -> save as report
-# - dashboard detail -> print preview
-# - reports -> print preview
-# - print preview: summary -> drill into detail
-# - reports page: summary -> drill into detail
-# - reports -> export as csv
-# - reports -> export as pdf
-# - reports -> export as xlsx
-# - print preview -> export as whatever
-# - dashboard detail -> export report as whatever
+# - Add XData tests
