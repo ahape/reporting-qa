@@ -9,6 +9,8 @@
             as the report table looks the same on both pages
         4. Expected -> The company logo should appear on top of the VAR logo in
             the upper right hand corner
+        5. Expected -> the report on the print preview page should load
+            instantaneously because it was seeded by data from the report page
       traits:
         - summary
         - mivc
@@ -17,8 +19,9 @@
       desc: |
         1. Load the report
         2. Click print preview
-        3. Expected -> title information shows "range" time filter, as well
-            as the report table looks the same on both pages
+        3. Expected -> title information shows the time range, but doesn't show
+            the "range" information (since it is redundant to the time range
+            itself)
       traits:
         - summary
         - mivc
@@ -61,16 +64,6 @@
             "call minutes" (fact) filter set on the report
         4. Expected -> the report on the print preview page should load
             instantaneously because it was seeded by data from the report page
-      traits:
-        - detail
-        - mivc
-
-    - link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/907a4d8d-1bdd-4faf-87f0-3959bbfce283
-      desc: |
-        1. Load the report
-        2. Click print preview
-        3. Expected -> title information shows the correct description of the
-            "call minutes" (fact) filter set on the report
       traits:
         - detail
         - mivc
@@ -170,6 +163,8 @@
             summary report cell"
         5. Expected -> detail should show as many records as were represented
             by the summary report aggregation
+        6. Expected -> detail report should be titled the same as the summary,
+            except with "(detail)" tacked onto the end of it
       traits:
         - summary
         - detail

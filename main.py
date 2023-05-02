@@ -17,6 +17,10 @@ def create_link(link):
   splice = link.rindex("#") if "#" in link else len(link)
   return link[:splice] + bust + link[splice:]
 
+def load_stylesheet():
+  with open("style.css", "r", encoding="utf8") as stream:
+    return stream.read()
+
 def load_yaml(args):
   groups = []
 
@@ -50,9 +54,6 @@ test_row_template = r"""
        link
     </a>
   </td>
-  <td class="fixed">
-    {traits}
-  </td>
   <td>
     <pre>{desc}</pre>
   </td>
@@ -76,7 +77,9 @@ checklist_template = r"""
   <head>
     <meta charset="utf-8" />
     <title>QA Checklist</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      {stylesheet}
+    </style>
   </head>
   <body>
     <h1>QA Checklist</h1>
@@ -109,7 +112,8 @@ def render(args):
     rendered = []
     for tg in test_groups:
       rendered.append(render_table(tg))
-    return checklist_template.format(tests="".join(rendered))
+
+    return checklist_template.format(tests="".join(rendered), stylesheet=load_stylesheet())
 
   return render_tables(load_yaml(args))
 
