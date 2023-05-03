@@ -21,7 +21,7 @@ def load_stylesheet():
   with open("style.css", "r", encoding="utf8") as stream:
     return stream.read()
 
-def load_yaml(args):
+def load_yaml():
   groups = []
 
   with open("tests.yaml", "r", encoding="utf8") as stream:
@@ -115,7 +115,7 @@ def render(args):
 
     return checklist_template.format(tests="".join(rendered), stylesheet=load_stylesheet())
 
-  return render_tables(load_yaml(args))
+  return render_tables(load_yaml())
 
 def get_args():
   args = argparse.ArgumentParser()
@@ -151,6 +151,6 @@ def main(args):
   create_checklist_file(args)
 
 if __name__ == "__main__":
-  args = get_args()
-  environment = args.environment
-  main(args)
+  _args = get_args()
+  environment = _args.environment
+  main(_args)
