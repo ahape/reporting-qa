@@ -35,7 +35,7 @@ def load_tests():
     for test_name in os.listdir(fullpath):
       json = load_yaml(fullpath + "/" + test_name)
       group.tests.append(Test(test_name, **json))
-
+    group.tests.sort(key=lambda t: t.name)
   return groups
 
 def md_hr(title, bar):
