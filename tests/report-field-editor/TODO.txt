@@ -1,0 +1,29 @@
+Expand LAYOUT pane (should also expand FIELDS pane)
+Collapse LAYOUT pane (should also collapse FIELDS pane)
+Expand FIELDS pane
+Collapse FIELDS pane
+Drag a field onto report layout
+Add a field onto report layout via dropdown
+Add a field onto report layout via morevert
+Drag remove a field from report layout
+Remove a field from report layout via morevert
+Drag a field from one Columns <-> Rows
+Expand field grouping
+Drag field onto report
+Drag field back into AVAILABLE
+Expand field grouping
+Drag field onto report
+Collapse field grouping
+Drag field back into AVAILABLE (should see field grouping animate)
+Expand same field grouping (field should be there)
+Resize browser window to make it tiny
+Expand a field grouping
+Scroll AVAILABLE section (field grouping should act like sticky header)
+Drag field all the way into Report Filters section
+Drag field (that's not allowed as a filter) all the way into Report Filters section (should not be allow to drop it)
+Hover over field (should see tooltip)
+Add a filter (should see filter icon on field)
+Navigate to Dashboard Detail page
+Run some of the previous tests from above
+Navigate to VAR Portal > Partner Report Templates page
+Run some of the previous tests from above

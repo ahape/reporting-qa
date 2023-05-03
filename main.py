@@ -60,15 +60,17 @@ def load_yaml(path):
 def load_tests():
   groups = []
   for group_name in os.listdir(TEST_DIR):
-    group = TestGroup(group_name)
-    groups.append(group)
-    fullpath = f"{TEST_DIR}/{group_name}"
-    for test_name in os.listdir(fullpath):
-      abspath = f"{fullpath}/{test_name}"
-      logger.debug("Loading test file %s", abspath)
-      if (json := load_yaml(abspath)):
-        group.tests.append(Test(test_name, **json))
-    group.tests.sort(key=lambda t: t.name)
+    if group_name:
+      group = TestGroup(group_name)
+      fullpath = f"{TEST_DIR}/{group_name}"
+      for test_name in filter(lambda x: x.endswith(".yaml"), os.listdir(fullpath)):
+        abspath = f"{fullpath}/{test_name}"
+        logger.debug("Loading test file %s", abspath)
+        if (json := load_yaml(abspath)):
+          group.tests.append(Test(test_name, **json))
+      if group.tests:
+        group.tests.sort(key=lambda t: t.name)
+        groups.append(group)
   return groups
 
 def timestamp():

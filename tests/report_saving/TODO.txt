@@ -1,0 +1,6 @@
+- Create detail from scratch
+- Create OTFA from scratch
+- Create xdata from scratch
+- Save from template
+- Save from saved
+- Save new partner report?
