@@ -1,0 +1,7 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/c89ff976-602d-45dd-a3a6-5b2e2c890c54
+desc:
+  - Load the report
+  - Click print preview
+  - Once print preview loads, close the reports page
+  - Refresh the print preview page
+  - Expected -> print preview page should run a detail query, because it can't access the source page's data anymore

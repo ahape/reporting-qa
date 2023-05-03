@@ -1,0 +1,6 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/ff8b70b5-710c-4fc1-a2fe-a1f94515e0f0
+desc:
+  - Load the report
+  - Click print preview
+  - On the print preview page, click on the green report cell
+  - Expected -> should load C2G

@@ -1,0 +1,5 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/cf34688e-00a2-4338-8db9-21ea86045149
+desc:
+  - Load the report
+  - Click print preview
+  - Expected -> title information shows "recent time window" time filter, as well as the report table looks the same on both pages

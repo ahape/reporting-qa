@@ -1,0 +1,5 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4
+desc:
+  - Load the dashboard detail
+  - Click print preview
+  - Expected -> everything look normal

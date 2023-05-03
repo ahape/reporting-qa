@@ -1,0 +1,8 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4
+desc:
+  - Load the dashboard detail page
+  - Once the page loads, click the "Export" button
+  - Once the dialog opens, select "Export Report" (it should be the default selection), then select CSV as the format, then select Unformatted as the format style
+  - Click EXPORT
+  - Once the export finishes, open the file
+  - Expected -> file should look the same as the report, and be rendered as XLSX

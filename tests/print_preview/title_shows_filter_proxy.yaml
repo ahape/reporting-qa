@@ -1,0 +1,5 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823
+desc:
+  - Load the report
+  - Click print preview
+  - Expected -> title information shows the correct description of the "party name by workgroup membership" filter set on the report

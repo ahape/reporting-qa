@@ -1,0 +1,7 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/4a4dffc2-b9be-4d51-b421-1270f726579e
+desc:
+  - Load the report
+  - Click print preview
+  - Expected -> title information shows "relative" time filter, as well as the report table looks the same on both pages
+  - Expected -> The company logo should appear on top of the VAR logo in the upper right hand corner
+  - Expected -> the report on the print preview page should load instantaneously because it was seeded by data from the report page

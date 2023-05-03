@@ -1,0 +1,8 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e
+desc:
+  - Load the report
+  - Click on the cell that says "Jim Lewis"
+  - Load the detail report
+  - Expected -> there should be a filter for "Jim Lewis", and when hovering over it, it should say "This was added from drilling into a summary report cell"
+  - Expected -> detail should show as many records as were represented by the summary report aggregation
+  - Expected -> detail report should be titled the same as the summary, except with "(detail)" tacked onto the end of it

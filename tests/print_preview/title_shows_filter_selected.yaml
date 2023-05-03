@@ -1,0 +1,5 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/8d51f1e9-e263-405e-94ce-c89ef075261a
+desc:
+  - Load the report
+  - Click print preview
+  - Expected -> title information shows the correct description of the "party name" filter set on the report
