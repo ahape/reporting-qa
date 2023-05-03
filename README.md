@@ -4,7 +4,7 @@ print preview tests
 
 toggle sort options
 -------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=202305030022152951#report/3842/c89ff976-602d-45dd-a3a6-5b2e2c890c54)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657467456#report/3842/c89ff976-602d-45dd-a3a6-5b2e2c890c54)
   * Load the report
   * Click print preview
   * Expected -> "sort by" and "only show" record count checkboxes should be checked
@@ -13,7 +13,7 @@ toggle sort options
 
 drill from summary to detail
 ----------------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215421933#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657323562#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
   * Load the report
   * Click print preview
   * On the print preview page, click on one of the rows
@@ -21,14 +21,14 @@ drill from summary to detail
 
 title shows filter rtw
 ----------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215383153#report/3842/cf34688e-00a2-4338-8db9-21ea86045149)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657611711#report/3842/cf34688e-00a2-4338-8db9-21ea86045149)
   * Load the report
   * Click print preview
   * Expected -> title information shows "recent time window" time filter, as well as the report table looks the same on both pages
 
 title shows filter detail
 -------------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215258859#report/3842/907a4d8d-1bdd-4faf-87f0-3959bbfce283)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657867293#report/3842/907a4d8d-1bdd-4faf-87f0-3959bbfce283)
   * Load the report
   * Click print preview
   * Expected -> title information shows the correct description of the "call minutes" (fact) filter set on the report
@@ -36,35 +36,35 @@ title shows filter detail
 
 title shows filter matches
 --------------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230427221131472541&_qa=20230503002215857726#report/3842/10912a53-8ab8-4ac6-a0c8-b8d08777ecfe)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230427221131472541&_qa=20230503002657871734#report/3842/10912a53-8ab8-4ac6-a0c8-b8d08777ecfe)
   * Load the report
   * Click print preview
   * Expected -> title information shows the correct description of the "caller ID starts with" (detail dimension) filter set on the report
 
 title shows filter selected
 ---------------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215893310#report/3842/8d51f1e9-e263-405e-94ce-c89ef075261a)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657967892#report/3842/8d51f1e9-e263-405e-94ce-c89ef075261a)
   * Load the report
   * Click print preview
   * Expected -> title information shows the correct description of the "party name" filter set on the report
 
 title shows filter proxy
 ------------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215602585#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657101420#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
   * Load the report
   * Click print preview
   * Expected -> title information shows the correct description of the "party name by workgroup membership" filter set on the report
 
 title shows filter range
 ------------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215882702#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657873932#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
   * Load the report
   * Click print preview
   * Expected -> title information shows the time range, but doesn't show the "range" information (since it is redundant to the time range itself)
 
 c2g
 ---
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215238504#report/3842/ff8b70b5-710c-4fc1-a2fe-a1f94515e0f0)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657238307#report/3842/ff8b70b5-710c-4fc1-a2fe-a1f94515e0f0)
   * Load the report
   * Click print preview
   * On the print preview page, click on the green report cell
@@ -72,14 +72,14 @@ c2g
 
 from dashboard detail
 ---------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4&_qa=20230503002215467812)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4&_qa=20230503002657658040)
   * Load the dashboard detail
   * Click print preview
   * Expected -> everything look normal
 
 basic
 -----
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215937227#report/3842/4a4dffc2-b9be-4d51-b421-1270f726579e)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657197339#report/3842/4a4dffc2-b9be-4d51-b421-1270f726579e)
   * Load the report
   * Click print preview
   * Expected -> title information shows "relative" time filter, as well as the report table looks the same on both pages
@@ -88,14 +88,14 @@ basic
 
 otfa
 ----
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230427221131472541&_qa=20230503002215312364#report/3842/e90f0da4-2f0d-4adb-ad44-a956636d9157)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230427221131472541&_qa=20230503002657751939#report/3842/e90f0da4-2f0d-4adb-ad44-a956636d9157)
   * Load the report
   * Click print preview
   * Expected -> the OTFA report table should look the same on both pages
 
 fetch new data
 --------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215578453#report/3842/c89ff976-602d-45dd-a3a6-5b2e2c890c54)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657162782#report/3842/c89ff976-602d-45dd-a3a6-5b2e2c890c54)
   * Load the report
   * Click print preview
   * Once print preview loads, close the reports page
@@ -108,7 +108,7 @@ exporting tests
 
 print preview summary to detail
 -------------------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215625325#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657870390#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
   * Load the report
   * Click print preview
   * Click on the cell that says "Jim Lewis"
@@ -117,7 +117,7 @@ print preview summary to detail
 
 drill from summary to detail
 ----------------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215908458#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657744520#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
   * Load the report
   * Click on the cell that says "Jim Lewis"
   * Load the detail report
@@ -127,7 +127,7 @@ drill from summary to detail
 
 export pdf landscape
 --------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215816633#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657460346#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
   * Load the report
   * Click export
   * Expected -> the selections should be saved from last time (PDF / Portrait)
@@ -137,7 +137,7 @@ export pdf landscape
 
 save export preferences
 -----------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=2023050300221572871#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657984541#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
   * Load the report
   * Click print preview
   * Once the report loads, click "Export to Excel"
@@ -152,7 +152,7 @@ save export preferences
 
 basic report export
 -------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215652300#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657612586#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
   * Load the report
   * Click export
   * Select PDF
@@ -167,7 +167,7 @@ basic report export
 
 export csv formatted
 --------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215453593#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657160488#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
   * Load the report
   * Click export, then select CSV, then select Formatted, then click EXPORT
   * Once the export finishes, open the file
@@ -175,7 +175,7 @@ export csv formatted
 
 export csv unformatted
 ----------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215714844#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=20230503002657826490#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
   * Load the report
   * Click export, then select CSV, then select Unformatted, then click EXPORT
   * Once the export finishes, open the file
@@ -183,7 +183,7 @@ export csv unformatted
 
 export excel
 ------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230503002215918834#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx?_qa=2023050300265722244#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
   * Load the report
   * Click export, then select Excel, then click EXPORT
   * Once the export finishes, open the file
@@ -191,14 +191,14 @@ export excel
 
 save dashboard detail as report
 -------------------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4&_qa=20230503002215188150)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4&_qa=20230503002657837649)
   * Load the dashboard detail
   * Click "Save as Report"
   * Expected -> report table to look the same on both the Dashboard Detail and Reports page
 
 export report from dashboard detail
 -----------------------------------
-  * [(link to test)](http://localhost:8080/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4&_qa=20230503002215502548)
+  * [(link to test)](https://webapp.brightmetrics.com/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4&_qa=20230503002657143320)
   * Load the dashboard detail page
   * Once the page loads, click the "Export" button
   * Once the dialog opens, select "Export Report" (it should be the default selection), then select CSV as the format, then select Unformatted as the format style

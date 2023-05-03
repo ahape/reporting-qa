@@ -2,7 +2,7 @@
 import sys, os, argparse, datetime, logging, yaml, random, markdown
 from datetime import datetime as dt
 
-OUTPUT_FILE_NAME = "checklist"
+OUTPUT_FILE_NAME = "README"
 logging.basicConfig(format="%(asctime)s [%(levelname)s]: %(message)s")
 logger = logging.getLogger("main")
 environment = None
