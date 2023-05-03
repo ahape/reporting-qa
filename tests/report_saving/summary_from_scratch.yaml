@@ -1,0 +1,11 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#1440768/System
+desc:
+  - Click "Create new report"
+  - Select "User Activity"
+  - Click "Summary"
+  - Expected -> report appears blank, with a relative datetime filter applied
+  - Add a row to the report
+  - Add a value to the report
+  - Click "Save As"
+  - Enter a custom report grouping and name
+  - Expected -> the newly saved report is loaded, with the correct name and grouping

@@ -1,0 +1,5 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/1440768/dafe8675-6029-4adf-881c-3f909ef4a2d
+desc:
+  - Load the xdata report
+  - Click print preview
+  - Expected -> everything looks normal
