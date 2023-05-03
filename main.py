@@ -43,12 +43,12 @@ def md_hr(title, bar):
 
 class TestGroup:
   def __init__(self, name):
-    self.name = name.replace("_", " ") + " tests"
+    self.name = (name.replace("_", " ") + " tests").upper()
     self.tests = []
 
 class Test:
   def __init__(self, name, **kwargs):
-    self.name = name.replace(".yaml", "").replace("_", " ")
+    self.name = name.replace(".yaml", "").replace("_", " ").title()
     self.link = create_link(kwargs["link"])
     self.steps = ["  * " + bullet for bullet in kwargs["desc"]]
 
