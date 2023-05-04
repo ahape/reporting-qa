@@ -106,7 +106,7 @@ def get_args():
   args = argparse.ArgumentParser()
   args.add_argument("-k", "--keep", action="store_true")
   args.add_argument("-v", "--verbose", action="store_true")
-  args.add_argument("-e", "--environment")
+  args.add_argument("-e", "--environment", help="localhost | beta | testing | webapp (implicit)")
   args.add_argument("--html", action="store_true")
   return args.parse_args()
 
