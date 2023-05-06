@@ -4,7 +4,7 @@ EXPORTING TESTS
 
 Basic Report Export
 -------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_373296#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_762209#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
 * Load the report
 * Click export
 * Select PDF
@@ -19,7 +19,7 @@ Basic Report Export
 
 Drill From Summary To Detail
 ----------------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_502199#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_327245#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
 * Load the report
 * Click on the cell that says "Jim Lewis"
 * Load the detail report
@@ -29,7 +29,7 @@ Drill From Summary To Detail
 
 Export Csv Formatted
 --------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_238326#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_123346#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
 * Load the report
 * Click export, then select CSV, then select Formatted, then click EXPORT
 * Once the export finishes, open the file
@@ -37,7 +37,7 @@ Export Csv Formatted
 
 Export Csv Unformatted
 ----------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_292008#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_951176#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
 * Load the report
 * Click export, then select CSV, then select Unformatted, then click EXPORT
 * Once the export finishes, open the file
@@ -45,7 +45,7 @@ Export Csv Unformatted
 
 Export Excel
 ------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_942192#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_991051#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
 * Load the report
 * Click export, then select Excel, then click EXPORT
 * Once the export finishes, open the file
@@ -53,7 +53,7 @@ Export Excel
 
 Export Pdf Landscape
 --------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_851563#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_102928#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
 * Load the report
 * Click export
 * Expected -> the selections should be saved from last time (PDF / Portrait)
@@ -63,7 +63,7 @@ Export Pdf Landscape
 
 Export Report From Dashboard Detail
 -----------------------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4&_qa=20230505172740_903779)
+* [(link to test)](http://localhost:8080/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4&_qa=20230505173715_969476)
 * Load the dashboard detail page
 * Once the page loads, click the "Export" button
 * Once the dialog opens, select "Export Report" (it should be the default selection), then select CSV as the format, then select Unformatted as the format style
@@ -74,7 +74,7 @@ Export Report From Dashboard Detail
 
 Print Preview Summary To Detail
 -------------------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_167651#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_995752#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
 * Load the report
 * Click print preview
 * Click on the cell that says "Jim Lewis"
@@ -83,7 +83,7 @@ Print Preview Summary To Detail
 
 Save Dashboard Detail As Report
 -------------------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4&_qa=20230505172740_192156)
+* [(link to test)](http://localhost:8080/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4&_qa=20230505173715_689180)
 * Load the dashboard detail
 * Click "Save as Report"
 * Expected -> report table to look the same on both the Dashboard Detail and Reports page
@@ -91,7 +91,7 @@ Save Dashboard Detail As Report
 
 Save Export Preferences
 -----------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_240356#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_731168#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
 * Load the report
 * Click print preview
 * Once the report loads, click "Export to Excel"
@@ -106,7 +106,7 @@ Save Export Preferences
 
 Xdata
 -----
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_864536#report/1440768/dafe8675-6029-4adf-881c-3f909ef4a2de)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_313364#report/1440768/dafe8675-6029-4adf-881c-3f909ef4a2de)
 * Load the report
 * Click on any drill-through cell
 * Expected -> morevert menu prompts you for which data source to drill into
@@ -116,7 +116,7 @@ Xdata
 
 Xdata With Proxy Filter
 -----------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_302091#report/1440768/33ea0098-814e-4304-83ca-02de797ad0f7)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_717034#report/1440768/33ea0098-814e-4304-83ca-02de797ad0f7)
 * Load the report
 * Click on the cell that says "Wednesday"
 * Select "Call Legs" as the drill-through data source
@@ -129,7 +129,7 @@ PRINT PREVIEW TESTS
 
 Basic
 -----
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_762230#report/3842/4a4dffc2-b9be-4d51-b421-1270f726579e)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_347454#report/3842/4a4dffc2-b9be-4d51-b421-1270f726579e)
 * Load the report
 * Click print preview
 * Expected -> title information shows "relative" time filter, as well as the report table looks the same on both pages
@@ -138,7 +138,7 @@ Basic
 
 C2G
 ---
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_444700#report/3842/ff8b70b5-710c-4fc1-a2fe-a1f94515e0f0)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_256228#report/3842/ff8b70b5-710c-4fc1-a2fe-a1f94515e0f0)
 * Load the report
 * Click print preview
 * On the print preview page, click on the green report cell
@@ -146,7 +146,7 @@ C2G
 
 Drill From Summary To Detail
 ----------------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_243900#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_593437#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
 * Load the report
 * Click print preview
 * On the print preview page, click on one of the rows
@@ -154,7 +154,7 @@ Drill From Summary To Detail
 
 Fetch New Data
 --------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_8768#report/3842/c89ff976-602d-45dd-a3a6-5b2e2c890c54)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_926109#report/3842/c89ff976-602d-45dd-a3a6-5b2e2c890c54)
 * Load the report
 * Click print preview
 * Once print preview loads, close the reports page
@@ -163,21 +163,21 @@ Fetch New Data
 
 From Dashboard Detail
 ---------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4&_qa=20230505172740_669478)
+* [(link to test)](http://localhost:8080/UI-2/pages/DashboardDetail.aspx?tabid=912b9658-acd4-4ead-8ec2-debb18b8fb81&chartid=graph4&_qa=20230505173715_484733)
 * Load the dashboard detail
 * Click print preview
 * Expected -> everything look normal
 
 Otfa
 ----
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_53401#report/3842/e90f0da4-2f0d-4adb-ad44-a956636d9157)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_380169#report/3842/e90f0da4-2f0d-4adb-ad44-a956636d9157)
 * Load the report
 * Click print preview
 * Expected -> the OTFA report table should look the same on both pages
 
 Title Shows Filter Detail
 -------------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_901730#report/3842/907a4d8d-1bdd-4faf-87f0-3959bbfce283)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_548745#report/3842/907a4d8d-1bdd-4faf-87f0-3959bbfce283)
 * Load the report
 * Click print preview
 * Expected -> title information shows the correct description of the "call minutes" (fact) filter set on the report
@@ -185,42 +185,42 @@ Title Shows Filter Detail
 
 Title Shows Filter Matches
 --------------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_697845#report/3842/10912a53-8ab8-4ac6-a0c8-b8d08777ecfe)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_451341#report/3842/10912a53-8ab8-4ac6-a0c8-b8d08777ecfe)
 * Load the report
 * Click print preview
 * Expected -> title information shows the correct description of the "caller ID starts with" (detail dimension) filter set on the report
 
 Title Shows Filter Proxy
 ------------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_156609#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_598636#report/3842/c4d24ef0-4900-4a22-b6c4-da8cb19b3823)
 * Load the report
 * Click print preview
 * Expected -> title information shows the correct description of the "party name by workgroup membership" filter set on the report
 
 Title Shows Filter Range
 ------------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_786704#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_784625#report/3842/4dfc02f0-36d3-4b63-b694-702eb9874e1e)
 * Load the report
 * Click print preview
 * Expected -> title information shows the time range, but doesn't show the "range" information (since it is redundant to the time range itself)
 
 Title Shows Filter Rtw
 ----------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_161988#report/3842/cf34688e-00a2-4338-8db9-21ea86045149)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_26148#report/3842/cf34688e-00a2-4338-8db9-21ea86045149)
 * Load the report
 * Click print preview
 * Expected -> title information shows "recent time window" time filter, as well as the report table looks the same on both pages
 
 Title Shows Filter Selected
 ---------------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_564726#report/3842/8d51f1e9-e263-405e-94ce-c89ef075261a)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_927726#report/3842/8d51f1e9-e263-405e-94ce-c89ef075261a)
 * Load the report
 * Click print preview
 * Expected -> title information shows the correct description of the "party name" filter set on the report
 
 Toggle Sort Options
 -------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_138540#report/3842/c89ff976-602d-45dd-a3a6-5b2e2c890c54)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_747148#report/3842/c89ff976-602d-45dd-a3a6-5b2e2c890c54)
 * Load the report
 * Click print preview
 * Expected -> "sort by" and "only show" record count checkboxes should be checked
@@ -229,7 +229,7 @@ Toggle Sort Options
 
 Xdata
 -----
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_938178#report/1440768/dafe8675-6029-4adf-881c-3f909ef4a2de)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_171703#report/1440768/dafe8675-6029-4adf-881c-3f909ef4a2de)
 * Load the xdata report
 * Click print preview
 * Expected -> everything looks normal
@@ -238,9 +238,25 @@ Xdata
 REPORT SAVING TESTS
 ===================
 
+Detail From Scratch
+-------------------
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_838600#1440768/System)
+* Click "Create new report"
+* Select "User Activity"
+* Click "Detail"
+* Expected -> report appears blank, with a relative datetime filter applied
+* Add a column to the report
+* Add a value to the report
+* Click "Run Report"
+* Click "Save As"
+* Enter a custom report grouping and name
+* Expected -> the newly saved report is loaded, with the correct name and grouping
+* Now go ahead and delete the report
+* Expected -> it deletes
+
 Summary From Scratch
 --------------------
-* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505172740_82803#1440768/System)
+* [(link to test)](http://localhost:8080/UI-2/pages/Reports.aspx?_qa=20230505173715_99016#1440768/System)
 * Click "Create new report"
 * Select "User Activity"
 * Click "Summary"
@@ -250,4 +266,6 @@ Summary From Scratch
 * Click "Save As"
 * Enter a custom report grouping and name
 * Expected -> the newly saved report is loaded, with the correct name and grouping
+* Now go ahead and delete the report
+* Expected -> it deletes
 
