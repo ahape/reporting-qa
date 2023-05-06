@@ -6,3 +6,4 @@ desc:
   - Click EXPORT
   - Once the export finishes, open the file
   - Expected -> file should look the same as the report, and be rendered as XLSX
+  - Expected -> the filename should be the same as the dashboard detail title

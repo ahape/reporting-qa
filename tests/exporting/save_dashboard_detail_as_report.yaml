@@ -3,3 +3,4 @@ desc:
   - Load the dashboard detail
   - Click "Save as Report"
   - Expected -> report table to look the same on both the Dashboard Detail and Reports page
+  - Expected -> the report name should be the source chart name, and the report group should be the data source name
