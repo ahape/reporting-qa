@@ -1,0 +1,7 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/1440768/33ea0098-814e-4304-83ca-02de797ad0f7
+desc:
+  - Load the report
+  - Click on the cell that says "Wednesday"
+  - Select "Call Legs" as the drill-through data source
+  - Expected -> for a brief moment, a detail query dialog should appear, then afterward, a new tab should open
+  - Expected -> the detail report should load normally
