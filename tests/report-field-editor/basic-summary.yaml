@@ -1,0 +1,54 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/8d51f1e9-e263-405e-94ce-c89ef075261a
+desc:
+  - Collapse LAYOUT pane
+  - Expected -> collapses
+  - Expand LAYOUT pane
+  - Expected -> expands
+  - Expand FIELDS pane
+  - Collapse LAYOUT pane
+  - Expected -> LAYOUT and FIELDS collapse
+  - Expand FIELDS pane
+  - Drag a summary field from FIELDS>Available Dimensions onto LAYOUT>Rows
+  - Expected -> Should move from one container to another
+  - Expected -> Should re-render the report
+  - Add a field onto LAYOUT>Columns via dropdown ("Drag/Search Field Here")
+  - Expected -> Should remove field from Available Dimensions, and appear in
+    Column
+  - Switch to Values tab in FIELDS pane
+  - Add a field onto Values via morevert
+  - Expected -> Field should not be in FIELDS>Available Values container
+  - Expected -> Field should be in LAYOUT>Values container
+  - Drag field from LAYOUT>Rows over FIELDS container
+  - Expected -> FIELDS container should have switched its active tab from
+    Dimensions to Values
+  - Expected -> Field should disappear from Rows and appear in AD
+  - Remove a field from LAYOUT>Columns via morevert
+  - Expected -> Field should disappear from Columns and appear in AD
+  - Drag a field from Columns to Rows
+  - Expected -> Should work
+  - Expand field grouping Call Date_Grp
+  - Expected -> Should expand
+  - Drag field from Call Date_Grp onto report
+  - Collapse field grouping
+  - Drag field back into FIELDS>Available Dimensions
+  - Expected -> Field grouping should highlight, indicating something happened
+    w/in it
+  - Expected -> If you expand the field grouping again, the field that you
+    removed from the report should be present there
+  - With field grouping still expanded, resize browser window to make it tiny
+  - Scroll FIELDS>Available Dimensions section all the way to the bottom
+  - Expected -> Field grouping label should act as a sticky header and remain
+    at the top of the container while scrolling
+  - Drag an Available Dimension all the way into Report Filters section
+  - Expected -> Filter area should have highlighted once the field was over the
+    dropzone
+  - Try dragging an Available Value all the way into the Report Filters section
+  - Expected -> Shouldn't be allowed
+  - Hover over any field in FIELDS or LAYOUT
+  - Expected -> Should see tooltip
+  - Click the morevert on a field in Rows or Columns that doesn't have a filter
+    set, and select ADD FILTER
+  - Expected -> Filter should appear in the Report Filters area
+  - Click the morevert on that same field you just added a filter to, and
+    select REMOVE FILTER
+  - Expected -> Filter should be removed from the Report Filters area

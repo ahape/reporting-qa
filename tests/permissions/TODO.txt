@@ -1,0 +1,30 @@
+View report permission
+----------------------
+Ex -> Locked filters show up as readonly
+Ex -> Can't edit permissions
+Ex -> Can't create schedules? Can't remove filtes? Can't modify filters?
+  
+Modify report permission
+------------------------
+Ex -> Can't delete the report
+
+Admin report permission
+-----------------------
++ when additional user(s) have admin access to report
+  - Delete for all
+    Ex -> should delete report
+  - Remove own permission
+    Ex -> Should remove report for user
++ When additional user(s) have sub-admin access to report
+  - Delete for all
+    Ex -> should be prompted there are other users
+  - Remove own permission, assign new admin
+    Ex -> should be notified that admin perm has been assigned
++ When additional user(s) has report schedule
+  - Delete
+    Ex -> should be prompted stating there are schedules
+
+User with restricted data view(s)
+---------------------------------
+Ex -> Can't report on data set user is restricted from
+Ex -> Can't filter on data set user is restricted from

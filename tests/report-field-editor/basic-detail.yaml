@@ -1,0 +1,26 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/3842/10912a53-8ab8-4ac6-a0c8-b8d08777ecfe
+desc:
+  - Run the report
+  - In LAYOUT>Values, click the morevert on Call Minutes and select ADD THRESHOLD
+  - In "Alert Threshold Amount" type 3
+  - In "Warning Threshold Amount" type 1
+  - Click APPLY
+  - Expected -> All Call Minutes cells over 3 minutes should appear in red, and
+    the cells that are less than 3 but greater than 1 should appear in yellow
+  - In LAYOUT>Values, click the morevert on Call Minutes and select EDIT THRESHOLD
+  - Change the Alert color to something else, then click APPLY
+  - Expected -> Red cells should change to the color chosen
+  - In LAYOUT>Values, click the morevert on Call Minutes and select EDIT THRESHOLD
+  - Click DELETE
+  - Expected -> All threshold coloring should disappear from report
+  - In LAYOUT>Columns, click the morevert on Call Reason and select ADD THRESHOLD
+  - Click "Click here to select values"
+  - Expected -> The MultipleSelect dialog should appear with a list of possible
+    values
+  - Click on "Called", then click APPLY, then click APPLY again
+  - Expected -> All of the Call Reason fields should appear in the threshold
+    coloring
+  - In LAYOUT>Values, drag the Call Minutes field into the Report Filters area
+  - Expected -> Should create a filter on Call Minutes
+  - Expected -> A filter icon should appear on the Call Minutes field in the
+    Values section
