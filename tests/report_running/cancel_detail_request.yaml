@@ -1,0 +1,18 @@
+link: https://webapp.brightmetrics.com/UI-2/pages/Reports.aspx#report/1260804/0e578889-604a-40cc-a40c-8f0b646ed0e9
+desc:
+  - Open the developer tools, and view the Network tab
+  - Run the report (1)
+  - The moment the detail query dialog shows up, press cancel (while it says "Queuing up agent task")
+    - This will attempt to abort the AJAX request that triggers the agent command
+    - This will ALSO ensure that if the AJAX completes, we'll subsequently send an action=cancel
+  - Expected -> request is cancelled, a request is made to /Commands with action=cancel, and no more polls to /Commands are made
+  - Run the report (2)
+  - Once the detail query dialog shows up, wait until is says "Waiting for task to complete on agent", then press cancel
+  - Expected -> request is cancelled, a request is made to /Commands with action=cancel, and no more polls to /Commands are made
+  - Run the report (3)
+  - Then click on another page in the app sidebar
+  - Expected -> request is cancelled, a request is made to /Commands with action=cancel, and no more polls to /Commands are made
+  - Open up Fiddler, and capture traffic for your browser process
+  - Run the report (4)
+  - Close the browser tab
+  - Expected -> request is cancelled, a request is made to /Commands with action=cancel (can only be verified via Fiddler)
